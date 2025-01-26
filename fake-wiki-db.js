@@ -63,7 +63,6 @@ const randomNumber = () => {
 };
 
 function debug_db() {
-  // This function might be useful to call from index.js for debugging, idk
   console.log(JSON.stringify(pages, null, 2));
 }
 
