@@ -2,7 +2,12 @@ const db = require("./fake-wiki-db");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Example app listening on http://localhost:${port}`);
+});
+
 
 app.use(express.static(__dirname + "/src"));
 app.set("view engine", "ejs");
@@ -169,5 +174,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on http://localhost:${port}`);
+  console.log(`Example app listening on ${port}`);
 });
