@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiki - HISTORY - <%=article.name%></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1><%=article.name%></h1>
+    <div class="buttons">
+      <form action="/article/<%=article.name%>/" method="GET">
+        <input type="submit" value="Return To Current" />
+      </form>
+      <form action="/" method="GET">
+        <input type="submit" value="Home" />
+      </form>
+    </div>
+    <hr />
+    <ul>
+      <%for(const version in article.versions){%>
+      <li>
+        <a href="/article/<%=article.name%>/history/<%=version%>"><%=version%></a>
+      </li>
+      <p><%=`${article.versions[version].created}`%></p>
+      <%}%>
+    </ul>
+  </body>
+</html>

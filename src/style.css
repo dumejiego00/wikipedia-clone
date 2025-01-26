@@ -1,0 +1,13 @@
+.buttons {
+  width: 150%;
+  display: flex;
+}
+
+.buttons form {
+  padding-right: 5px;
+}
+
+#form_edit {
+  display:flex;
+  justify-content: space-around;
+}

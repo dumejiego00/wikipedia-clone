@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Jiki - Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results</h1>
+    <p>You searched for: <%=keyword%></p>
+    <ul>
+      <%for(const article in articles){%>
+      <li>
+        <a href="/article/<%=articles[article].name%>"
+          ><%=articles[article].name%></a
+        >
+      </li>
+      <%}%>
+    </ul>
+    <form action="/" method="GET">
+      <input type="submit" value="Back to Home" />
+    </form>
+  </body>
+</html>

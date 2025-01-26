@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiki</title>
+  </head>
+  <body>
+    <h1>Welcome to the Jiki!</h1>
+    <p>Here are some randomly-chosen articles you could click on.</p>
+    <ul>
+      <%for(const article in articles){%>
+      <li>
+        <a href="/article/<%=articles[article].name%>"
+          ><%=articles[article].name%></a
+        >
+      </li>
+      <%}%>
+    </ul>
+    <hr />
+    <p>
+      Or perhaps you'd rather
+      <a href="/newarticle">click here to create a new article</a>
+    </p>
+    <hr />
+    <p>Or search for an article</p>
+    <form action="/searcharticles" method="GET">
+      <input type="text" id="keyword" name="keyword" />
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>

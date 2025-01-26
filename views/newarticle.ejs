@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiki - Create A New Wiki Article</title>
+  </head>
+  <body>
+    <p><%=newarticlemessage%></p>
+    <h1>Create New Article</h1>
+    <form action="/newarticle" method="POST">
+      <h2>Name of your new article</h2>
+      <input type="text" id="title" name="title" value="<%=newarticlename%>" />
+      <h2>Content of your new article</h2>
+
+      <textarea id="textarea" name="textarea" rows="30" cols="30"></textarea>
+      <div>
+        <input type="submit" value="Create That Article" />
+      </div>
+    </form>
+    <form action="/" method="GET">
+      <input type="submit" value="Cancel(go back to Home)" />
+    </form>
+  </body>
+</html>

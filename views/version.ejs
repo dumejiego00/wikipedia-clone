@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Jiki - <%=name%></title>
+  </head>
+  <body>
+    <h1><%=name%></h1>
+    <p>
+      You are looking at an archived version of this article, version
+      <%=version%>
+    </p>
+    <div class="buttons">
+      <form action="/article/<%=name%>" method="GET">
+        <input type="submit" value="Return to Current" />
+      </form>
+      <form action="/article/<%=name%>/history" method="GET">
+        <input type="submit" value="History" />
+      </form>
+      <form action="/" method="GET">
+        <input type="submit" value="Home" />
+      </form>
+    </div>
+    <hr />
+    <p><%-content%></p>
+  </body>
+</html>

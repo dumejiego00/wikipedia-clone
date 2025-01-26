@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiki - EDIT - <%=name%></title>
+  </head>
+  <body>
+    <h1>EDIT - <%=name%></h1>
+    <h2>Title</h2>
+    <input
+      type="text"
+      id="title"
+      name="title"
+      value="<%=name%>"
+      readonly
+    />
+    <h2>Contents</h2>
+    <form action="/article/<%=name%>/edit" method="POST">
+      <textarea type="text" id="textarea" name="textarea" rows="30" cols="30">
+<%=content%></textarea
+      >
+      <div id="form_edit">
+        <input type="submit" value="Update That Article" />
+        <a href="/article/<%=name%>">Never Mind</a>
+      </div>
+    </form>
+  </body>
+</html>
