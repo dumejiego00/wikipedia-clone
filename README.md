@@ -4,7 +4,7 @@
 
 This project is a simple Wikipedia clone, built using Node.js, Express, and EJS. It demonstrates functionality for creating, editing, searching, and managing wiki articles, while also including features such as auto-linkification and article history. The application uses server-side validation and is structured to provide a clean and functional experience.
 
-See example [here](https://wikipedia-clone.onrender.com)
+See example [here](https://wikipedia-clone.onrender.com) (might take some time for server to start up)
 
 ## Features
 

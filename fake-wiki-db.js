@@ -1,61 +1,83 @@
 const date = new Date();
 let pages = {
-  init: {
-    code_name: "init",
-    name: "init",
-    contents: "This is a simple initial page to prove that pages work",
+  young_thug: {
+    code_name: "young_thug",
+    name: "young_thug",
+    contents: "Young Thug, born Jeffrey Williams, is a rapper known for his unconventional vocal style and influential presence in the Atlanta hip-hop scene.",
     created: `${date}`,
     versions: {},
   },
-  page1: {
-    code_name: "page1",
-    name: "page1",
-    contents: "BowWow",
+  gucci_mane: {
+    code_name: "gucci_mane",
+    name: "gucci_mane",
+    contents: "Gucci Mane, born Radric Davis, is a pioneer of trap music and a major influence on Atlanta rap culture.",
     created: `${date}`,
     versions: {},
   },
-  page2: {
-    code_name: "page2",
-    name: "page2",
-    contents: "This is complicated",
+  future: {
+    code_name: "future",
+    name: "future",
+    contents: "Future, born Nayvadius Wilburn, is known for his melodic rap style and hits like 'Mask Off.'",
     created: `${date}`,
     versions: {},
   },
-  about_us: {
-    code_name: "about_us",
-    name: "about_us",
-    contents: "top shop",
+  lil_baby: {
+    code_name: "lil_baby",
+    name: "lil Baby",
+    contents: "Lil Baby, born Dominique Jones, rose to fame with hits like 'Drip Too Hard' and is a key figure in modern Atlanta rap.",
     created: `${date}`,
     versions: {},
   },
-  contact: {
-    code_name: "contact",
-    name: "contact",
-    contents: "crop top",
+  slaughter: {
+    code_name: "slaughter",
+    name: "slaughter",
+    contents: "21 Savage aka The Slaughter King, born Shéyaa Bin Abraham-Joseph, is known for his gritty lyrics and collaborations with major artists.",
     created: `${date}`,
     versions: {},
   },
-  services: {
-    code_name: "services",
-    name: "services",
-    contents: "chop chop",
+  offset: {
+    code_name: "offset",
+    name: "offset",
+    contents: "Offset, a member of the migos, is recognized for his dynamic verses and fashion influence.",
     created: `${date}`,
     versions: {},
   },
-  IdleWords: {
-    code_name: "IdleWords",
-    name: "IdleWords",
-    contents: "drop top",
+  quavo: {
+    code_name: "quavo",
+    name: "quavo",
+    contents: "Quavo, another member of migos, is known for his melodic hooks and solo projects.",
     created: `${date}`,
     versions: {},
   },
-  BowWow: {
-    code_name: "BowWow",
-    name: "BowWow",
-    contents: `<ul><li> https://example.com </li><li> IdleWords </li> <li> NoExistingPage </li></ul>`,
+  takeoff: {
+    code_name: "takeoff",
+    name: "takeoff",
+    contents: `<ul><li> https://en.wikipedia.org/wiki/Takeoff_(rapper) </li><li> TiP </li> <li> NoExistingPage </li></ul>`,
     created: `${date}`,
     versions: {},
   },
+  ludacris: {
+    code_name: "ludacris",
+    name: "ludacris",
+    contents: "Ludacris, born Christopher Bridges, is a veteran Atlanta rapper known for his charismatic delivery and acting career.",
+    created: `${date}`,
+    versions: {},
+  },
+  migos: {
+    code_name: "migos",
+    name: "migos",
+    contents: "Migos, consisting of Quavo, Offset, and Takeoff, were a groundbreaking hip-hop trio from Atlanta known for their unique triplet flow and hits like 'Bad and Boujee.'",
+    created: `${date}`,
+    versions: {},
+  },
+  TiP: {
+    code_name: "TiP",
+    name: "TiP",
+    contents: "T.I., born Clifford Harris, is a legendary Atlanta rapper known as one of the pioneers of trap music, with hits like 'Whatever You Like' and 'Live Your Life.'",
+    created: `${date}`,
+    versions: {},
+  }
+    
 };
 
 const randomNumber = () => {
